@@ -1,6 +1,6 @@
 *{
-    margin:10px;
-    padding: 10px;
+    margin:5px;
+    padding: 5px;
     box-sizing: border-box;
 }
 .padre{
@@ -31,7 +31,7 @@
             }
             .social{
                 background: white;
-                flex: 1 1 auto;
+                flex: 2 1 auto;
                 height: 30px;
             }
         .texto-principal{
@@ -41,9 +41,9 @@
         .printer{
             height: 300px;
         }
-            h1{
+            /* h1{
                 background: yellowgreen;
-            }
+            } */
     }
     .text-second{
         background: white;
@@ -61,27 +61,43 @@
             flex-flow: row wrap; /*если содержимое слишком большое убирает сниз*/
         }
             .article{
-                background:#575658;
+                background:white;
                 flex: 1 1 40%;
                 .foto{
                     width: 200px;
+                    float: left; /* Обтекание картинки текстом */
+                }
+                .foto-text{
+                    margin-left: 110px; /* Отступ от левого края */
                 }
                 
             }
             .navegacion{
-                background:#260547;
-                flex: 1 1 100%;
-                .foto{
-                    width: 200px;
+                background: white;
+                flex: 1 1 50%;
+                    .foto{
+                    width: 150px;
+                    float: left; /* Обтекание картинки текстом */
                 }
             }
-                
+    .section-toner{
+                background: #000;
+                display: flex; /* делает содержимое в вертикаль */
+        
+            }
         .aside{
             background:#530d29;
             flex: 1 1 auto;
         }
             .publicidad{
-                background:#e0377b;
+                background:white;
+                .foto{
+                    width: 120px;
+                    float: left; /* Обтекание картинки текстом */
+                }
+                .foto-text{
+                    margin-left: 110px; /* Отступ от левого края */
+                }
             }
     .menu-down{
         background:white;
@@ -94,8 +110,8 @@
         justify-content: center;
     }
         .pie{
-            background: #7fd127;
-            width: 300px;
+            background: white;
+            width: 400px;
             
         }
 @media all and (max-width: 768px){
