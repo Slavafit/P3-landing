@@ -1,0 +1,118 @@
+*{
+    margin:10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.padre{
+    background: rgb(198, 198, 198);
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+        .menu{
+            display: flex;
+            flex-flow: row nowrap;  /* вытягивание в горизонталь */
+            background: #644949;
+            height: 100px;
+            align-items: center; /* выравнивание по линии горизонта */
+        }
+            .logo{
+                background: white;
+                flex: 1 1 auto;
+                height: 35px;
+            }
+            .nav{
+                background: white;
+                flex: 5 1 auto;
+                height: 30px;
+            }
+            .social{
+                background: white;
+                flex: 1 1 auto;
+                height: 30px;
+            }
+        .texto-principal{
+            background: yellowgreen;
+            
+        }
+        .printer{
+            height: 300px;
+        }
+            h1{
+                background: yellowgreen;
+            }
+    }
+    .text-second{
+        background: white;
+        display: flex; /* делает содержимое в вертикаль */
+     } 
+    .section{
+        background: #000;
+        display: flex; /* делает содержимое в вертикаль */
+
+    }
+        .articulos{
+            background:#5a4966;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap; /*если содержимое слишком большое убирает сниз*/
+        }
+            .article{
+                background:#575658;
+                flex: 1 1 40%;
+                .foto{
+                    width: 200px;
+                }
+                
+            }
+            .navegacion{
+                background:#260547;
+                flex: 1 1 100%;
+                .foto{
+                    width: 200px;
+                }
+            }
+                
+        .aside{
+            background:#530d29;
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background:#e0377b;
+            }
+    .menu-down{
+        background:white;
+        display: flex;
+        justify-content: center;
+    }
+    .footer{
+        background: #000;
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            background: #7fd127;
+            width: 300px;
+            
+        }
+@media all and (max-width: 768px){
+    .section{
+        flex-direction: column;    /*  при разрешении ниже 768 будут выстроено в вертикаль */
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
